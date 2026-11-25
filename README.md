@@ -6,6 +6,8 @@ Six small chart recipes in Python: consistent colors, explicit units, and
 reproducible data. Each example includes the CSVs, plotting code, and PNG/SVG
 exports.
 
+[Browse the live gallery →](https://hayiwei.github.io/data-viz-gallery/)
+
 ![Six charts showing trends, spending, commute durations, weekly activity, relationships, and group variation](docs/overview.png)
 
 **All data is synthetic.** These are visual design examples, not findings about
@@ -24,7 +26,8 @@ real people, cities, or transport systems.
 
 ## Browse without installing Python
 
-Clone or download the repository and open **docs/index.html** in your browser.
+Open the [live gallery](https://hayiwei.github.io/data-viz-gallery/), or clone
+or download the repository and open **docs/index.html** in your browser.
 The gallery is a self-contained static page, with local images and no network
 dependencies. Each chart links to PNG and editable SVG exports.
 
