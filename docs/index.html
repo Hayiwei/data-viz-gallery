@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Data Viz Gallery · Hayiwei</title>
+<style>
+:root{color-scheme:light;--ink:#19334a;--teal:#117c83;--muted:#596e7c;--line:#dfe7ed}
+*{box-sizing:border-box}body{margin:0;background:#f5f7f9;color:var(--ink);font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header,main,footer{max-width:1160px;margin:auto;padding:0 32px}header{padding-top:64px;padding-bottom:40px}
+nav{display:flex;justify-content:space-between;gap:20px;font-size:13px}a{color:var(--teal);text-underline-offset:4px}
+.label{font-weight:700;letter-spacing:.16em;color:var(--teal);font-size:12px;text-transform:uppercase}
+h1{font-size:clamp(32px,5vw,56px);letter-spacing:-.045em;line-height:1.12;margin:36px 0 18px;max-width:750px}
+.lead{max-width:640px;color:var(--muted);font-size:18px}.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.tags span{font-size:12px;border:1px solid var(--line);border-radius:20px;padding:4px 12px;background:white}
+main{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+article{background:white;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.card-top{padding:18px 22px;display:flex;justify-content:space-between;font-size:12px;color:var(--muted);border-bottom:1px solid #eef2f5}
+.card-top span:first-child{color:var(--teal);font-weight:700}img{display:block;width:100%;height:auto}
+.card-bottom{padding:8px 22px 24px}h2{font-size:18px;letter-spacing:-.02em;margin:0}
+.card-bottom p{font-size:13px;color:var(--muted);margin:5px 0 16px}.card-bottom a{font-size:12px;margin-right:14px}
+footer{padding-top:40px;padding-bottom:36px;font-size:13px;color:var(--muted)}a:focus-visible{outline:3px solid var(--teal);outline-offset:4px}
+@media(max-width:700px){main{grid-template-columns:1fr}header,main,footer{padding-left:20px;padding-right:20px}header{padding-top:30px}}
+</style></head><body><header>
+<nav><span class="label">Hayiwei / Data Viz Gallery</span><a href="https://github.com/Hayiwei/data-viz-gallery">View source ↗</a></nav>
+<h1>Everyday data,<br>thoughtfully drawn.</h1>
+<p class="lead">Six small studies in making data easier to read. A consistent palette, clear labels, and Python you can run yourself.</p>
+<div class="tags"><span>Python + Matplotlib</span><span>Six chart recipes</span><span>PNG + SVG</span><span>Synthetic data · fixed seed</span></div>
+</header><main><article><div class="card-top"><span>01</span><span>Trend</span></div><a href="figures/01-daily-trend.svg"><img src="figures/01-daily-trend.svg" alt="A daily rhythm: 90 days · trailing 7-day average" loading="lazy"></a><div class="card-bottom"><h2>A daily rhythm</h2><p>90 days · trailing 7-day average</p><a href="figures/01-daily-trend.svg" download>SVG ↗</a> <a href="figures/01-daily-trend.png" download>PNG ↗</a></div></article>
+<article><div class="card-top"><span>02</span><span>Comparison</span></div><a href="figures/02-spending-bars.svg"><img src="figures/02-spending-bars.svg" alt="Where the budget goes: 12 months · category means" loading="lazy"></a><div class="card-bottom"><h2>Where the budget goes</h2><p>12 months · category means</p><a href="figures/02-spending-bars.svg" download>SVG ↗</a> <a href="figures/02-spending-bars.png" download>PNG ↗</a></div></article>
+<article><div class="card-top"><span>03</span><span>Distribution</span></div><a href="figures/03-duration-histogram.svg"><img src="figures/03-duration-histogram.svg" alt="How long is a commute?: 360 trips · 5-minute bins" loading="lazy"></a><div class="card-bottom"><h2>How long is a commute?</h2><p>360 trips · 5-minute bins</p><a href="figures/03-duration-histogram.svg" download>SVG ↗</a> <a href="figures/03-duration-histogram.png" download>PNG ↗</a></div></article>
+<article><div class="card-top"><span>04</span><span>Pattern</span></div><a href="figures/04-activity-heatmap.svg"><img src="figures/04-activity-heatmap.svg" alt="Patterns across the week: 168 weekday-hour cells · simulated event counts" loading="lazy"></a><div class="card-bottom"><h2>Patterns across the week</h2><p>168 weekday-hour cells · simulated event counts</p><a href="figures/04-activity-heatmap.svg" download>SVG ↗</a> <a href="figures/04-activity-heatmap.png" download>PNG ↗</a></div></article>
+<article><div class="card-top"><span>05</span><span>Relationship</span></div><a href="figures/05-distance-scatter.svg"><img src="figures/05-distance-scatter.svg" alt="Distance meets duration: 360 trips · color and shape encode mode" loading="lazy"></a><div class="card-bottom"><h2>Distance meets duration</h2><p>360 trips · color and shape encode mode</p><a href="figures/05-distance-scatter.svg" download>SVG ↗</a> <a href="figures/05-distance-scatter.png" download>PNG ↗</a></div></article>
+<article><div class="card-top"><span>06</span><span>Variation</span></div><a href="figures/06-mode-boxplot.svg"><img src="figures/06-mode-boxplot.svg" alt="Three ways to get there: 120 trips per mode · whiskers at 1.5 × IQR" loading="lazy"></a><div class="card-bottom"><h2>Three ways to get there</h2><p>120 trips per mode · whiskers at 1.5 × IQR</p><a href="figures/06-mode-boxplot.svg" download>SVG ↗</a> <a href="figures/06-mode-boxplot.png" download>PNG ↗</a></div></article></main><footer>
+All observations are generated examples, not measurements of real people or cities.
+<br>Reproduce every chart with <code>python -m gallery.build</code>. MIT licensed.</footer></body></html>
